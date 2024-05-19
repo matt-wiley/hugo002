@@ -1,4 +1,7 @@
 baseURL = 'https://matt-wiley.github.io/hugo002/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'hugo001theme'
+theme = 'muffin'
+
+# Enables menu data structure based on the content directory
+sectionPagesMenu = 'main'
+
