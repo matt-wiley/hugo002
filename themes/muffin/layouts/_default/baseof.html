@@ -1,20 +1,22 @@
-<!DOCTYPE html>
-<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
-<head>
-  {{ partial "head.html" . }}
-</head>
-<body class="w-100">
-  {{ partial "header.html" . }}
-  <div class="w-100 flex flex-column flex-row-ns center"> <!-- flexbox container --> 
-    <section class="w-20"> <!-- sidebar -->
-      {{ partial "sidebar.html" (dict "menuID" "main" "page" .) }} 
-    </section>
-    <main class="w-80 flex-auto"> <!-- main content -->
-      {{ block "main" . }}{{ end }}
-    </main>
-  </div>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
-</body>
-</html> 
+<!doctype html>
+<html
+  lang="{{ or site.Language.LanguageCode }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}"
+>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body class="w-100">
+    {{ partial "header.html" . }}
+    {{ partial "hz-menu.html" (dict "page" .) }}
+    <div class="w-100 flex flex-column flex-row-ns center">
+      <section class="w-20">
+        {{ partial "sidebar.html" (dict "menuID" "main" "page" .) }}
+      </section>
+      <main class="w-80 flex-auto">
+        {{ block "main" . }}{{ end }}
+      </main>
+    </div>
+    <footer>{{ partial "footer.html" . }}</footer>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+baseURL: 'https://example.org/'
+languageCode: 'en-us'
+
+params:
+  muffin:
+    version: '0.1.0'
+
+    # -----------------------------------------------------------------------------
+    # Site-wide configuration parameters
+    # 
+    #   These can be overridden in the [params] of the site's hugo.toml file to 
+    #   provide site-specific values.
+    #
+    config: 
+      title: "Muffin Theme"
+      description: "A replication of Hugo Techdoc Theme built with Tachyons CSS"
+      showVersion: true
+      
+      nav:
+        global:
+          - displayName: "Home"
+            url: "/hugo002"
+          - displayName: "GitHub"
+            url: "https://github.com/matt-wiley"
+
+    # -----------------------------------------------------------------------------
+
+module:
+  hugoVersion:
+    extended: false
+    min: "0.116.0"
+

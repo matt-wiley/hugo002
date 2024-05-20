@@ -1,0 +1,28 @@
+{{- /*
+Renders a menu for the given menu ID.
+
+@context {page} page The current page.
+@context {string} menuID The menu ID.
+
+@example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+*/}}
+
+{{- $page := .page }}
+
+<nav class="pl4 white bg-black">
+  <ul class="pa0 ma0">
+    {{- range sort site.Params.Muffin.Config.Nav.Global "order" "asc" }}
+      {{- $attrs := dict "href" .url }}
+      {{- $name := .displayName }}
+      <li class="dib mr4">
+        <a class="dib pv2 link dim white"
+          {{- range $k, $v := $attrs }}
+            {{- with $v }}
+              {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+            {{- end }}
+          {{- end -}}
+        >{{ $name }}</a>
+      </li>
+    {{- end }}
+  </ul>
+</nav>
