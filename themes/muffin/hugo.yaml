@@ -12,7 +12,7 @@ params:
     #   provide site-specific values.
     #
     config: 
-      title: "Muffin Theme"
+      title: "Muffin Techdoc Theme"
       description: "A replication of Hugo Techdoc Theme built with Tachyons CSS"
       showVersion: true
       

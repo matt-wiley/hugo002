@@ -2,8 +2,8 @@
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-  <nav class="pa1 pa3-ns">
-    <ul class="list pl0 measure center">
+  <nav class="bg-red">
+    <ul class="ma0 pa0 list measure center">
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
     </ul>
   </nav>
@@ -24,14 +24,21 @@
         {{- $name = . }}
       {{- end }}
     {{- end }}
-    <li class="lh-solid">
-      <a class="db w-100 pa1 link dim blue"
-        {{- range $k, $v := $attrs }}
-          {{- with $v }}
-            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
-          {{- end }}
-        {{- end -}}
-      >{{ $name }}</a>
+    <li>
+      <div class="flex flex-row">
+        <a class="dib w-80 pa1 link dim blue"
+          {{- range $k, $v := $attrs }}
+            {{- with $v }}
+              {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+            {{- end }}
+          {{- end -}}
+        >{{ $name }}</a>
+        <div class="flex flex-row dib w-20">
+          <a class="dib center link dim black" href="#">
+            #
+          </a>
+        </div>
+      </div>
       {{- with .Children }}
         <ul>
           {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}

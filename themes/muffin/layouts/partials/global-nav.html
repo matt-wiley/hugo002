@@ -15,7 +15,7 @@ Renders a menu for the given menu ID.
       {{- $attrs := dict "href" .url }}
       {{- $name := .displayName }}
       <li class="dib mr4">
-        <a class="dib pv2 link dim white"
+        <a class="dib pv1 link dim white lh-copy"
           {{- range $k, $v := $attrs }}
             {{- with $v }}
               {{- printf " %s=%q" $k $v | safeHTMLAttr }}

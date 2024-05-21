@@ -8,12 +8,12 @@
   </head>
   <body class="w-100">
     {{ partial "header.html" . }}
-    {{ partial "hz-menu.html" (dict "page" .) }}
+    {{ partial "global-nav.html" (dict "page" .) }}
     <div class="w-100 flex flex-column flex-row-ns center">
-      <section class="w-20">
+      <section class="w-25">
         {{ partial "sidebar.html" (dict "menuID" "main" "page" .) }}
       </section>
-      <main class="w-80 flex-auto">
+      <main class="w-75 flex-auto ph5 pt3">
         {{ block "main" . }}{{ end }}
       </main>
     </div>
