@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on </title>
-    <link>http://localhost:53337/hugo002/hugo/</link>
+    <link>http://localhost:1313/hugo002/hugo/</link>
     <description>Recent content in Hugo on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 May 2024 22:41:59 -0400</lastBuildDate>
-    <atom:link href="http://localhost:53337/hugo002/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/hugo002/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Links</title>
-      <link>http://localhost:53337/hugo002/hugo/links/</link>
+      <link>http://localhost:1313/hugo002/hugo/links/</link>
       <pubDate>Mon, 20 May 2024 22:41:59 -0400</pubDate>
-      <guid>http://localhost:53337/hugo002/hugo/links/</guid>
+      <guid>http://localhost:1313/hugo002/hugo/links/</guid>
       <description> Hugo Hugo Themes </description>
     </item>
   </channel>

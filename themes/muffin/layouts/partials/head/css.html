@@ -1,4 +1,4 @@
-{{ $cssFiles := slice "css/main.css" "css/tachyons.css" }}
+{{ $cssFiles := slice "css/main.css" "css/tachyons.css" "css/fa-solid.css" "css/fontawesome.css" }}
 {{- range $cssFiles }}
   {{- with resources.Get . }}
     {{- if eq hugo.Environment "development" }}

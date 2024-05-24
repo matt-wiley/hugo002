@@ -2,17 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:53337/hugo002/hugo/links/</loc>
+    <loc>http://localhost:1313/hugo002/fontawesome/</loc>
+    <lastmod>2024-05-21T21:32:59-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hugo002/fontawesome/icons/</loc>
+    <lastmod>2024-05-21T21:32:59-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hugo002/hugo/links/</loc>
     <lastmod>2024-05-20T22:41:59-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:53337/hugo002/hugo/</loc>
+    <loc>http://localhost:1313/hugo002/hugo/</loc>
     <lastmod>2024-05-20T22:35:00-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:53337/hugo002/</loc>
+    <loc>http://localhost:1313/hugo002/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:53337/hugo002/categories/</loc>
+    <loc>http://localhost:1313/hugo002/categories/</loc>
   </url><url>
-    <loc>http://localhost:53337/hugo002/tags/</loc>
+    <loc>http://localhost:1313/hugo002/tags/</loc>
   </url>
 </urlset>
